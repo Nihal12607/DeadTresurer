@@ -305,9 +305,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 240
-        width: 16
-        height: 16
+        y: 248
+        width: 48
+        height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -569,9 +569,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 144
-        y: 224
-        width: 16
-        height: 16
+        y: 232
+        width: 48
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -722,8 +722,8 @@ TextureImporter:
       name: world_tileset_28
       rect:
         serializedVersion: 2
-        x: 64
-        y: 208
+        x: 66
+        y: 207
         width: 16
         height: 16
       alignment: 0
@@ -965,9 +965,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 192
+        y: 161
         width: 16
-        height: 16
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -986,9 +986,9 @@ TextureImporter:
       name: world_tileset_40
       rect:
         serializedVersion: 2
-        x: 96
+        x: 97
         y: 192
-        width: 16
+        width: 14
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1118,10 +1118,10 @@ TextureImporter:
       name: world_tileset_46
       rect:
         serializedVersion: 2
-        x: 32
+        x: 44
         y: 176
-        width: 16
-        height: 16
+        width: 4
+        height: 1
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2910,7 +2910,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       world_tileset_0: 8915592984020964820
       world_tileset_1: -1170603751906099542
