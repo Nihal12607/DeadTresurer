@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private Animator anim;
     private float horizontal;
     private bool isGrounded;
+    public Animator animator;
 
     // --- NEW: Double Jump Variables ---
     private bool canDoubleJump;
@@ -19,7 +20,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        rb.freezeRotation = false;
+        rb.freezeRotation = true;
     }
 
     void Update()
@@ -45,8 +46,6 @@ public class PlayerController : MonoBehaviour
                 Jump();
                 canDoubleJump = false; // Use up the double jump
 
-                // Trigger Nihal's double jump animation if he has a trigger named "doubleJump"
-                anim.SetTrigger("doubleJump");
             }
         }
         if (Input.GetKeyDown(KeyCode.R))

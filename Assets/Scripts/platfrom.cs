@@ -7,9 +7,20 @@ public class MovingPlatform : MonoBehaviour
     public float speed = 2f;
 
     private bool movingLeft = true;
+    Rigidbody2D rb;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     void Update()
     {
+
+        if (Input.GetKey(KeyCode.LeftAlt) && Input.GetKeyDown(KeyCode.N))
+        {           
+            rb.bodyType = RigidbodyType2D.Kinematic;
+        }
         if (movingLeft)
         {
             transform.position += Vector3.left * speed * Time.deltaTime;
