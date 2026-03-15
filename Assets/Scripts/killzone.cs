@@ -1,26 +1,14 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class killzone : MonoBehaviour
+public class KillZoneLoader : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
-            string currentSceneName = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene(currentSceneName);
+            RespawnManager.SetRespawn(other.transform.position);
+            SceneManager.LoadScene("GhostRealm");
         }
     }
 }
